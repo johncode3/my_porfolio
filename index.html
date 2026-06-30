@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovann Kakkada | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&family=Sacramento&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#home" class="logo">John Code3</a>
+            
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="hero-top">
+
+                    <div class="hero-image-container"> 
+                        <img src="assets/images/3d-man.png" alt="Sovann Kakkada">
+                    </div>
+
+                    <div class="hero-text">
+                        <h3 class="hero-name">Hello, I am Sovann Kakkada <span class="text-color">(John Code3)</span></h3>
+                        <h2 class="hero-title">Someone who <br> loves <span class="text-color">learning</span> and <span class="text-color">believes</span> in moving step by step.</h2>
+                        <blockquote class="hero-quote">“If You Think Math is Hard Try Web Development.”</blockquote>
+                    </div>
+                </div>
+
+                <div class="hero-bottom">
+                    <h2 class="hero-roles">I am a <span class="role-word"></span></h2>
+                    <p class="currently-work">Currently, I'm a Web Designer and Graphic Designer at <strong>Khmer Ceramics</strong></p>
+                    <p class="personal-discription">Self-taught and passionate about design. I love working independently,
+                        <br>diving into projects and figuring out on my own.
+                        <br>Every mistake is a chance to learn and grow.</p>
+
+                    <div class="hero-btns">
+                        <button class="btn-viewMyWorks">View My Works</button>
+                        <button class="btn-getInTouch">Get In Touch</button>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    <p>I believe great design shouldn't just solve problems—it should look fire  while doing it. My journey started in the world of pixels and  professional printing, where I spent two years mastering the art of  visual communication. Now, as a Y2 IT student, I’m bridging that  creative background with the logic of full-stack development. My typical day? Handling professional graphic design and web architecture  from 8 to 5, then diving into university lectures from 6 to 9. It’s a  high-energy grind, but it’s what allows me to build digital experiences  that are as technically sound as they are aesthetically pleasing. Whether I'm architecting custom WordPress listing sites, sharing  university survival tips on TikTok, or documenting my coding journey,  I’m focused on one thing: creating a positive impact through clean,  thoughtful tech.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="info-card">
+                        <h3>Self-Taught</h3>
+                        <p>Learn by doing</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Problem Solver</h3>
+                        <p>Debug & improve</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Code Enthusiast</h3>
+                        <p>Love building things</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Committed</h3>
+                        <p>One step at a time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2>My Work</h2>
+                <p>A selection of my recent projects in web design and graphic design</p>
+
+                <div class="filter-buttons">
+                    <button class="btn-filter active">All Projects</button>
+                    <button class="btn-filter">Web Design</button>
+                    <button class="btn-filter">Graphic Design</button>
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-card web-design">
+                        <img src="assets/images/projects/ecommerce-thumb.webp" alt="E-Commerce Project">
+                        <div class="card-content">
+                            <span class="category-tag">Web Design</span>
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack school project featuring a 10-page user flow and responsive UI.</p>
+                            <a href="projects/ecommerce.html" class="btn-link">View Case Study →</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card web-design">
+                        <img src="assets/images/projects/cih-thumb.webp" alt="Cambodia is Happiness">
+                        <div class="card-content">
+                            <span class="category-tag">WordPress / ACF</span>
+                            <h3>Cambodia is Happiness</h3>
+                            <p>Real-world company listing website built with custom logic and dynamic fields.</p>
+                            <a href="projects/cih.html" class="btn-link">View Case Study →</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card graphic-design">
+                        <img src="assets/images/projects/print-thumb.webp" alt="Designs at Khmer Ceramics">
+                        <div class="card-content">
+                            <span class="category-tag">Graphic Design</span>
+                            <h3>All Designs at Khmer Ceramics</h3>
+                            <p>All my works at Khmer Ceramics. Designs include gift cards, promotional panels, and print materials.</p>
+                            <button class="btn-lightbox">Open Gallery →</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card web-design">
+                        <img src="assets/images/projects/portfolio-thumb.webp" alt="Personal Portfolio">
+                        <div class="card-content">
+                            <span class="category-tag">Web Design</span>
+                            <h3>Personal Brand v1.0</h3>
+                            <p>Designing and developing my digital presence using a modular CSS architecture.</p>
+                            <a href="#home" class="btn-link">Currently Viewing →</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card graphic-design">
+                        <img src="assets/images/projects/sport-thumb.webp" alt="Sports Graphics">
+                        <div class="card-content">
+                            <span class="category-tag">Graphic Design</span>
+                            <h3>Sports & Event Visuals</h3>
+                            <p>Creative event posters and sports branding designed for high-impact social media.</p>
+                            <button class="btn-lightbox">Open Gallery →</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card web-design logic">
+                        <img src="assets/images/projects/logic-thumb.webp" alt="Coming Soon">
+                        <div class="card-content">
+                            <span class="category-tag">Coming Soon</span>
+                            <h3>New Project</h3>
+                            <p>It's a secret! Stay tuned for updates.</p>
+                            <button class="btn-link disabled">Coming Soon...</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="skills" class="skill-section">
+            <div class="container">
+                <h2>Skills & Tech Stack</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <img src="assets/icons/figma.svg" alt="Figma">
+                        <h3>Figma</h3>
+                        <p>85%</p>
+                        <progress value="85" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/html.svg" alt="HTML">
+                        <h3>HTML</h3>
+                        <p>90%</p>
+                        <progress value="90" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/css.svg" alt="CSS">
+                        <h3>CSS</h3>
+                        <p>85%</p>
+                        <progress value="85" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/js.svg" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                        <p>10%</p>
+                        <progress value="10" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/wordpress.svg" alt="WordPress">
+                        <h3>WordPress</h3>
+                        <p>80%</p>
+                        <progress value="80" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/python.svg" alt="Python">
+                        <h3>Python</h3>
+                        <p>70%</p>
+                        <progress value="70" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/photoshop.svg" alt="Photoshop">
+                        <h3>Photoshop</h3>
+                        <p>95%</p>
+                        <progress value="95" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/illustrator.svg" alt="Illustrator">
+                        <h3>Illustrator</h3>
+                        <p>90%</p>
+                        <progress value="90" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/capcut.svg" alt="CapCut">
+                        <h3>CapCut</h3>
+                        <p>85%</p>
+                        <progress value="85" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/ai.svg" alt="AI">
+                        <h3>AI</h3>
+                        <p>75%</p>
+                        <progress value="75" max="100"></progress>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="assets/icons/database.svg" alt="Data Base">
+                        <h3>Data Base(SSMS, Oracle, MySQL)</h3>
+                        <p>30%</p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind? Feel free to reach out!</p>
+                <button class="btn-getInTouch">Get in Touch</button>
+
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-btn">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn">LinkedIn</a>
+                    <a href="https://facebook.com/yourusername" target="_blank" class="social-btn">Facebook</a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="social-btn">Instagram</a>
+                    <a href="https://tiktok.com/@yourusername" target="_blank" class="social-btn">TikTok</a>
+                    <a href="https://youtube.com/@yourusername" target="_blank" class="social-btn">YouTube</a>
+                    <a href="https://t.me/yourusername" target="_blank" class="social-btn">Telegram</a>
+                </div>
+                <footer class="mini-footer">
+                    <p>&copy; 2026 Sovann Kakkada. All right reserved.</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

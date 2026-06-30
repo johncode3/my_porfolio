@@ -1,0 +1,36 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    overflow-x: hidden;     
+    -webkit-font-smoothing: antialiased; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;  
+}
+
+
+
+a {
+    text-decoration: none;  
+    color: inherit;         
+}

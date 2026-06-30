@@ -1,0 +1,19 @@
+/* 1.base */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+
+/* 2.layout */
+@import 'layout/container.css';
+@import 'layout/header.css';   
+@import 'layout/sections.css'; 
+@import 'layout/footer.css';
+
+/* 3.components */
+@import 'components/buttons.css';
+@import 'components/cards.css'; 
+@import 'components/badges.css';
+
+/* 4.utils */
+@import 'utils/animations.css'; 
+@import 'utils/responsive.css';

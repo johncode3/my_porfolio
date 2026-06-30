@@ -1,0 +1,23 @@
+button {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--color-text-primary);
+} 
+
+button:hover {
+    box-shadow: 0px 0px 10px 2px  var(--color-primary);
+    transition: var(--transition-smooth);
+}
+
+.btn-viewMyWorks {
+    background-color: var(--color-primary);
+    transition: var(--transition-smooth);
+}
+
+.btn-getInTouch {
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-bg-card);
+    transition: var(--transition-smooth);
+}

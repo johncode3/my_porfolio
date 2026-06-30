@@ -1,0 +1,105 @@
+/* Styles for home page sections */
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: left;
+}
+/* Hero-Top Section */
+.hero-top{  
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 32px;
+    align-items: center;
+}   
+
+.hero-image-container {
+    width: 400px;
+}
+
+.hero-image-container img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.5));
+}
+
+.hero-name{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.hero-title{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-color{
+    color: var(--color-primary);
+}
+
+.hero-quote {
+    font-family: 'JetBrains Mono', monospace; 
+    color: var(--color-primary);
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px){
+    .hero-top{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }   
+
+    .hero-image-container{
+        margin-top: 0;
+        width: min(280px, 80vw);
+        margin-inline: auto;
+    }
+
+    .hero-image-container img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero-text{
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-name{
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+}
+/* Hero Bottom Section */
+.hero-roles {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap;
+}
+/* Role word animation */
+.role-word {
+    display: inline-block;
+    color: var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    padding-right: 4px;
+    animation: roleCaret 0.8s step-end infinite;
+}
+
+@keyframes roleCaret {
+    0%, 100% { border-right-color: transparent; }
+    50% { border-right-color: var(--color-primary); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .role-word {
+        animation: none;
+        border-right: 0;
+    }
+}

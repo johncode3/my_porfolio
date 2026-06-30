@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #10b981;
+    --color-bg-primary: #101828;     
+    --color-bg-card: #1f2937;        
+    --color-text-primary: #ffffff;  
+    --color-text-secondary: #9ca3af; 
+
+    --container-width: 940px;          
+    --radius-card: 16px;            
+    --radius-button: 9999px;         
+    --space-section: 80px;           
+
+    --transition-smooth: 0.3s ease-in-out;
+}

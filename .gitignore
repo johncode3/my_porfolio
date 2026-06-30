@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+
+# Personal project log
+Project Process.md
+
+# Local VS Code agent setup
+.github/agents/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependency folders
+node_modules/
+
+# Build output
+dist/
+build/
