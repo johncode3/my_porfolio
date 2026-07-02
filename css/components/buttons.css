@@ -1,6 +1,6 @@
 button {
     font: inherit;
-    border-radius: 50px;
+    border-radius: var(--radius-button);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
