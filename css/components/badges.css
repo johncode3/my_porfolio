@@ -1,0 +1,10 @@
+/* category tag of my work section */
+.category-tag {
+    font-size: 0.3rem;
+    padding: 0px 3px;
+    margin: 5px 0px;
+    border-radius: var(--radius-card);
+    background-color: #18493E;
+    color: #0FBF60;
+    border: 1px solid #136341;
+}

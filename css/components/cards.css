@@ -1,0 +1,108 @@
+/* info card of about section  */
+.info-card {
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    padding: 20px;
+    border: 1px solid var(--color-primary);
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: var(--space-section);
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+}
+
+.info-card:hover {
+    box-shadow: 0px 0px 10px 2px  var(--color-primary);
+    transition: var(--transition-smooth);
+}
+
+/* portfolio card of portfolio section */
+.portfolio-card {
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--color-primary);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: var(--space-section);
+}
+
+.portfolio-card .work-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.portfolio-card .category-tag {
+    width: fit-content;
+    padding: 0px 6px;
+    font-size: 0.5rem;
+    border-radius: var(--radius-card);
+}
+
+.portfolio-card .work-title h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.portfolio-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+    flex: 1;
+}
+
+.portfolio-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.portfolio-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0px 0px 10px 2px  var(--color-primary);
+    transition: var(--transition-smooth);
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.btn-link {
+    margin-top: auto;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.btn-link.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
