@@ -206,6 +206,7 @@
 .skill-section {
     background-color: #030712;
     padding-top: var(--space-section);
+    padding-bottom: var(--space-section);
 }
 
 .skills-grid {
@@ -215,5 +216,77 @@
     margin-top: 100px;
 }
 
+/* Contact Section */
+.contact-section {
+    background-color: #030712;
+    padding-top: var(--space-section);
+}
 
+.contact-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.contact-description {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-text-secondary);
+}
+
+.contact-section .btn-getInTouch {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    transition: var(--transition-smooth);
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.social-btn .fab {
+    font-size: 1.5rem;
+    padding: 10px 10px;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px) translateX(3px);
+    transition: var(--transition-smooth);
+    box-shadow: var(--color-primary) 0px 0px 10px 2px;
+    color: var(--color-text-primary);
+}
+
+.footer-line {
+    border-top: 2px solid var(--color-text-secondary);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.mini-footer {
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    padding-bottom: 100px;
+}
