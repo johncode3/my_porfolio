@@ -108,19 +108,29 @@
     font-weight: 800;
     color: #fff;
     white-space: nowrap;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 /* Role word animation */
 .role-word {
     display: inline-block;
     color: var(--color-primary);
-    border-right: 2px solid var(--color-primary);
     padding-right: 4px;
-    animation: roleCaret 0.8s step-end infinite;
+    border-right: 3px solid var(--color-primary);
+    animation: blinkCursor 0.75s step-end infinite;
 }
 
-@keyframes roleCaret {
-    0%, 100% { border-right-color: transparent; }
-    50% { border-right-color: var(--color-primary); }
+@keyframes blinkCursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--color-primary);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -128,7 +138,14 @@
         animation: none;
         border-right: 0;
     }
+    .hero-roles {
+        font-size: 1.6rem;    
+        min-height: 4rem;
+        justify-content: center;
+        text-align: center;
+    }
 }
+
 /* About sections */
 .about-section {
     display: flex;

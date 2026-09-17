@@ -47,7 +47,7 @@
 
 /* Hamburger Menu */
 .hamburger {
-  display: none;  /* Hidden on desktop */
+  display: none;
   flex-direction: column;
   background: none;
   border: none;
