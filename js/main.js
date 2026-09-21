@@ -17,39 +17,41 @@ if (hamburgerBtn && mainNav) {
 }
 
 //Role word animation
-const roleWord = document.querySelector('.role-word');
+document.addEventListener('DOMContentLoaded', () => {
+    const roleWord = document.querySelector('.role-word');
 
-if (roleWord) {
-    const roles = ['Graphic Designer', 'Junior Web Developer', 'Start Up Coding'];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
+    if (roleWord) {
+        const roles = ['Graphic Designer', 'Junior Web Developer', 'Start Up Coding'];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
 
-    function typeRole() {
-        const current = roles[roleIndex];
+        function typeRole() {
+            const current = roles[roleIndex];
 
-        if (!deleting) {
-            charIndex++;
-            roleWord.textContent = current.slice(0, charIndex);
+            if (!deleting) {
+                charIndex++;
+                roleWord.textContent = current.slice(0, charIndex);
 
-            if (charIndex === current.length) {
-                deleting = true;
-                setTimeout(typeRole, 1400);
-                return;
+                if (charIndex === current.length) {
+                    deleting = true;
+                    setTimeout(typeRole, 1400);
+                    return;
+                }
+            } else {
+                charIndex--;
+                roleWord.textContent = current.slice(0, charIndex);
+
+                if (charIndex === 0) {
+                    deleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                }
             }
-        } else {
-            charIndex--;
-            roleWord.textContent = current.slice(0, charIndex);
 
-            if (charIndex === 0) {
-                deleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
-            }
+            setTimeout(typeRole, deleting ? 60 : 120);
         }
 
-        setTimeout(typeRole, deleting ? 60 : 120);
+        typeRole();
     }
-
-    typeRole();
-}
+});
 
