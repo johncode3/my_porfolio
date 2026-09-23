@@ -4,10 +4,7 @@
         padding: 0 10px;
     }
 
-    .main-header {
-        padding: 15px 0;
-    }
-
+    /* Hambuger Menu */
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -23,6 +20,11 @@
         height: 2px;
         background-color: var(--color-text-primary);
         transition: var(--transition-smooth);
+    }
+
+    /* Header Menu */
+    .main-header {
+        padding: 15px 0;
     }
 
     .main-nav {
@@ -47,6 +49,7 @@
         gap: 25px;
     }
 
+    /* Home Section */
     .home-section {
         padding-top: 100px;
         min-height: auto;
@@ -88,7 +91,37 @@
         width: 100%;
         text-align: center;
     }
-    .about-grid,
+
+    /* About Section */
+    .about-bio-card {
+        padding: 25px 20px;
+    }
+    
+    .info-card {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .info-card h3 {
+        font-size: 1rem;
+    }
+
+    .info-card p {
+        font-size: 0.9rem;
+    }
+
+    
+    .bio-lead {
+        font-size: 1.15rem;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: var(--space-section);
+    }
+    
+    /* My work section */
     .portfolio-grid,
     .skills-grid {
         grid-template-columns: 1fr;
@@ -101,4 +134,5 @@
         gap: 10px;
         justify-content: flex-start;
     }
+
 }

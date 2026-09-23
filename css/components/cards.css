@@ -7,6 +7,7 @@
     text-align: center;
     cursor: pointer;
     margin-bottom: var(--space-section);
+    transition: var(--transition-smooth);
 }
 
 .info-card i {
@@ -26,8 +27,9 @@
 }
 
 .info-card:hover {
-    box-shadow: 0px 0px 10px 2px  var(--color-primary);
-    transition: var(--transition-smooth);
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px 2px var(--color-primary);
 }
 
 /* portfolio card of portfolio section */
