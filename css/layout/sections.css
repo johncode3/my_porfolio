@@ -19,6 +19,7 @@
     margin-bottom: 20px;
     color: var(--color-text-secondary);
 }
+
 /* Hero-Top Section */
 .hero-top{  
     display: grid;
@@ -103,6 +104,7 @@
         margin-bottom: 20px;
     }
 }
+
 /* Hero Bottom Section */
 .hero-roles {
     font-size: 1.9rem;
@@ -116,6 +118,7 @@
     flex-wrap: wrap;
     gap: 8px;
 }
+
 /* Role word animation */
 .role-word {
     display: inline-block;
@@ -370,11 +373,11 @@
     background-color: rgba(16, 185, 129, 0.15);
     border-color: var(--color-primary);
     color: #ffffff;
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+    box-shadow: 0 0 15px rgba(192, 213, 206, 0.5);
 }
 
 .footer-line {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--color-primary);
     margin: 40px auto 20px;
     max-width: var(--container-width);
 }

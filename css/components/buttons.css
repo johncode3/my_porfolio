@@ -1,25 +1,36 @@
-button {
+button,.btn-viewMyWorks,.btn-getInTouch {
     font: inherit;
     border-radius: var(--radius-button);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     color: var(--color-text-primary);
-} 
-
-button:hover {
-    box-shadow: 0px 0px 10px 2px  var(--color-primary);
     transition: var(--transition-smooth);
-    transform: translateY(-2px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .btn-viewMyWorks {
     background-color: var(--color-primary);
-    transition: var(--transition-smooth);
+    color: #ffffff;
 }
 
 .btn-getInTouch {
     border: 2px solid var(--color-primary);
     background-color: var(--color-bg-card);
-    transition: var(--transition-smooth);
+    color: var(--color-text-primary);
+}
+
+@media (hover: hover) {
+    button:hover,.btn-viewMyWorks:hover,.btn-getInTouch:hover {
+        box-shadow: 0px 0px 12px 2px var(--color-primary);
+        transform: translateY(-2px);
+    }
+}
+
+button:active,
+.btn-viewMyWorks:active,.btn-getInTouch:active {
+    transform: translateY(0px) scale(0.98);
 }
